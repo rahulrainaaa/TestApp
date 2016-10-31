@@ -60,7 +60,8 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/circleshape"
                 android:text="Login"
-                android:elevation="200dp" />
+                android:elevation="200dp"
+                android:id="@+id/btn_login" />
 
         </LinearLayout>
 
