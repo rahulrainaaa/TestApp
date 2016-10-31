@@ -7,7 +7,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,8 +26,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         listView = (ListView) findViewById(R.id.listView);
 
         list = new ArrayList<String>();
-        for(int i = 0; i < 40; i++)
-        {
+        for (int i = 0; i < 40; i++) {
             list.add("item " + i);
         }
         adapter = new ActivityListAdapter(this, list);
@@ -36,8 +34,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
 
         txtTargetRate.setOnClickListener(this);
         txtCurrentRate.setOnClickListener(this);
-
-
 
     }
 
