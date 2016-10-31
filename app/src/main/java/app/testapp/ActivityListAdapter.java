@@ -31,6 +31,15 @@ public class ActivityListAdapter extends ArrayAdapter<String> {
         View view = convertView;
         if (view == null) {
             view = inflater.inflate(R.layout.list_activitylist, null);
+            if (position % 4 == 0) {
+
+            } else if (position % 4 == 1) {
+
+            } else if (position % 4 == 2) {
+
+            } else if (position % 4 == 3) {
+
+            }
         }
         return view;
     }
