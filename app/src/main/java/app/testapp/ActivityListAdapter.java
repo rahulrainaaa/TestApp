@@ -1,10 +1,12 @@
 package app.testapp;
 
 import android.app.Activity;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
@@ -31,15 +33,21 @@ public class ActivityListAdapter extends ArrayAdapter<String> {
         View view = convertView;
         if (view == null) {
             view = inflater.inflate(R.layout.list_activitylist, null);
-            if (position % 4 == 0) {
-
-            } else if (position % 4 == 1) {
-
-            } else if (position % 4 == 2) {
-
-            } else if (position % 4 == 3) {
-
+        }
+        LinearLayout linearLayout = (LinearLayout)view.findViewById(R.id.linearlayout);
+        if (position % 4 == 0) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+            } else {
+                //linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
             }
+
+        } else if (position % 4 == 1) {
+
+        } else if (position % 4 == 2) {
+
+        } else if (position % 4 == 3) {
+
         }
         return view;
     }
