@@ -7,12 +7,12 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_light"
+        android:background="#e4c751"
         android:gravity="center"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
-        android:text="Skipped Items"
-        android:textSize="35dp"
+        android:text="SKIPPED ITEMS"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <ListView
