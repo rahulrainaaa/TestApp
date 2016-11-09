@@ -37,17 +37,29 @@ public class ActivityListAdapter extends ArrayAdapter<String> {
         LinearLayout linearLayout = (LinearLayout)view.findViewById(R.id.linearlayout);
         if (position % 4 == 0) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_red));
             } else {
                 //linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
             }
 
         } else if (position % 4 == 1) {
-
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+            } else {
+                //linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+            }
         } else if (position % 4 == 2) {
-
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_yellow));
+            } else {
+                //linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+            }
         } else if (position % 4 == 3) {
-
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_gray));
+            } else {
+                //linearLayout.setBackground(activity.getDrawable(R.drawable.rect_border_green));
+            }
         }
         return view;
     }
