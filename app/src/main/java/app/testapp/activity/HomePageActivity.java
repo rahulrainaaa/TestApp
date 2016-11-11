@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.PopupMenu;
 import android.view.View;
-import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,15 +23,16 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
 
     private TextView txtTargetRate, txtCurrentRate;
     private ListView listView;
+    LinearLayout menuLayout;
     public ArrayList<String> list;
     private ActivityListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home_page);
-
+        menuLayout = (LinearLayout) findViewById(R.id.menu_layout);
         txtCurrentRate = (TextView) findViewById(R.id.txt_current_rate);
         txtTargetRate = (TextView) findViewById(R.id.txt_target_rate);
         listView = (ListView) findViewById(R.id.listView);
@@ -42,24 +43,27 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
         }
         adapter = new ActivityListAdapter(this, list);
         listView.setAdapter(adapter);
-
+        menuLayout.setOnClickListener(this);
         txtTargetRate.setOnClickListener(this);
         txtCurrentRate.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.txt_current_rate:
                 Toast.makeText(this, "Current Rate", Toast.LENGTH_SHORT).show();
-                PopupMenu popup = new PopupMenu(this, this.getCurrentFocus());
-                popup.getMenuInflater().inflate(R.menu.menu_home_page, popup.getMenu());
-                popup.show();
                 break;
 
             case R.id.txt_target_rate:
                 Toast.makeText(this, "Target Rate", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, SummaryActivity.class));
+                break;
+
+            case R.id.menu_layout:
+                PopupMenu popup = new PopupMenu(this, view);
+                popup.getMenuInflater().inflate(R.menu.menu_home_page, popup.getMenu());
+                popup.show();
                 break;
 
             default:

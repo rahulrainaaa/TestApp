@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/one"
-        android:title="One" />
+        android:id="@+id/a"
+        android:title="Activity List" />
 
     <item
-        android:id="@+id/two"
-        android:title="Two" />
+        android:id="@+id/b"
+        android:title="Active List" />
 
     <item
-        android:id="@+id/three"
-        android:title="Three" />
+        android:id="@+id/c"
+        android:title="About Device" />
+
+    <item
+        android:id="@+id/d"
+        android:title="Setup Scanner" />
+
+
+    <item
+        android:id="@+id/e"
+        android:title="End of Shift" />
+
+    <item
+        android:id="@+id/f"
+        android:title="Break" />
+
+    <item
+        android:id="@+id/g"
+        android:title="Other" />
+
+
 </menu>
