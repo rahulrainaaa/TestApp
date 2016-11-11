@@ -18,7 +18,8 @@
         <activity
             android:name=".activity.HomePageActivity"
             android:label="Activity List" />
-        <activity android:name=".activity.SummaryActivity"></activity>
+        <activity android:name=".activity.SummaryActivity" />
+        <activity android:name=".activity.PickListActivity"></activity>
     </application>
 
 </manifest>
