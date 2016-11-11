@@ -1,4 +1,4 @@
-package app.testapp;
+package app.testapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import app.testapp.R;
+import app.testapp.adapter.ActivityListAdapter;
+
+/**
+ * @class HomePageActivity
+ * @desc Activity Class to show list of all categories.
+ */
 public class HomePageActivity extends FragmentActivity implements View.OnClickListener {
 
     private TextView txtTargetRate, txtCurrentRate;
@@ -38,7 +45,6 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
 
         txtTargetRate.setOnClickListener(this);
         txtCurrentRate.setOnClickListener(this);
-
     }
 
     @Override

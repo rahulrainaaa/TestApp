@@ -1,10 +1,17 @@
-package app.testapp;
+package app.testapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
+import app.testapp.R;
+import app.testapp.activity.HomePageActivity;
+
+/**
+ * @class LoginActivity
+ * @desc Activity Class for login screen.
+ */
 public class LoginActivity extends FragmentActivity implements View.OnClickListener {
 
     @Override

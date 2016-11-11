@@ -1,4 +1,4 @@
-package app.testapp;
+package app.testapp.adapter;
 
 import android.app.Activity;
 import android.os.Build;
@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
+
+import app.testapp.R;
 
 /**
  * @class ActivityListAdapter
