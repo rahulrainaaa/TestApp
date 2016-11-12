@@ -17,7 +17,7 @@
             android:layout_width="30dp"
             android:layout_height="15dp"
             android:layout_margin="10dp"
-            android:background="#3757ca"
+            android:background="@color/colorPrimary"
             android:gravity="center">
 
             <LinearLayout
@@ -34,7 +34,7 @@
             android:gravity="center"
             android:paddingRight="50dp"
             android:text="Activity List"
-            android:textColor="#e72c2c"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp"
             android:textStyle="bold" />
     </LinearLayout>
