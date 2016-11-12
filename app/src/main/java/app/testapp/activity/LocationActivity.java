@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import app.testapp.R;
 
+/**
+ * @class LocationActivity
+ * @desc Show location of item in rack positions.
+ */
 public class LocationActivity extends AppCompatActivity {
 
     @Override

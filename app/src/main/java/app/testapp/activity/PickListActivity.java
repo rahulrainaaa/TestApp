@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import app.testapp.R;
 import app.testapp.adapter.PickListAdapter;
 
+/**
+ * @class PickListActivity
+ * @desc Activity class to show pick list once category is choosed.
+ */
 public class PickListActivity extends FragmentActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
