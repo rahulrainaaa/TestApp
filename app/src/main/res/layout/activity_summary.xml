@@ -43,7 +43,8 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/circleshape_green"
-            android:text="Back to List" />
+            android:text="Back to List"
+            android:textColor="#ffffff" />
 
         <Button
             android:layout_width="wrap_content"
@@ -52,7 +53,8 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:background="@drawable/circleshape_red"
-            android:text="Skip &amp; Finish" />
+            android:text="Skip &amp; Finish"
+            android:textColor="#ffffff" />
 
 
     </LinearLayout>

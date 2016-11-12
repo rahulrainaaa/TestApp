@@ -7,9 +7,9 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -36,7 +36,8 @@
             android:text="Activity List"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <ListView
@@ -69,24 +70,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/rect_border"
+                android:background="@drawable/rect_border_borderblue"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Current Rate Activity"
-                android:textSize="16dp"
-                android:textStyle="bold|italic" />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/txt_target_rate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/rect_border"
+                android:background="@drawable/rect_border_borderblue"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Target Rate Activity"
-                android:textSize="16dp"
-                android:textStyle="bold|italic" />
+                android:textSize="16dp" />
 
         </LinearLayout>
 

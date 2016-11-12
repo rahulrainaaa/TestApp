@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -24,7 +25,8 @@
                 android:rotationX="30"
                 android:rotationY="0"
                 android:text="Warehouse Operator Assist"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:fontFamily="serif" />
 
             <EditText
                 android:id="@+id/editText3"
@@ -38,7 +40,8 @@
                 android:inputType="textPersonName"
                 android:lines="1"
                 android:padding="4dp"
-                android:textColorHint="#a6a5a5" />
+                android:textColorHint="#a6a5a5"
+                android:fontFamily="serif" />
 
             <EditText
                 android:id="@+id/editText4"
@@ -53,7 +56,8 @@
                 android:inputType="textPassword"
                 android:lines="1"
                 android:padding="4dp"
-                android:textColorHint="#a6a5a5" />
+                android:textColorHint="#a6a5a5"
+                android:fontFamily="serif" />
 
             <Button
                 android:id="@+id/btn_login"
@@ -63,7 +67,8 @@
                 android:background="@drawable/circleshape"
                 android:elevation="200dp"
                 android:text="Login"
-                android:textColor="#e6e6e6" />
+                android:textColor="#e6e6e6"
+                android:fontFamily="serif" />
 
         </LinearLayout>
 

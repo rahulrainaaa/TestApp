@@ -37,7 +37,8 @@
             android:text="Pick List 2"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="serif" />
     </LinearLayout>
 
     <ListView
