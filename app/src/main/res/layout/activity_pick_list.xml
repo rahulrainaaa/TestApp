@@ -47,7 +47,7 @@
         android:layout_above="@+id/linearLayout3"
         android:layout_below="@+id/linearLayout2"
         android:divider="#ffffff"
-        android:dividerHeight="9dp"
+        android:dividerHeight="0dp"
         android:padding="2dp"
         android:soundEffectsEnabled="true" />
 
@@ -60,26 +60,32 @@
         android:orientation="horizontal"
         android:weightSum="100">
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="20"
+            android:background="@drawable/rect_border"
             android:gravity="center"
-            android:text="Order No" />
+            android:text="Order No"
+            android:textSize="12dp" />
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="60"
+            android:background="@drawable/rect_border"
             android:gravity="center"
-            android:text="Pick Completion (x of y)" />
+            android:text="Pick Completion (x of y)"
+            android:textSize="12dp" />
 
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="20"
+            android:background="@drawable/rect_border"
             android:gravity="center"
-            android:text="Pick Rate" />
+            android:text="Pick Rate"
+            android:textSize="12dp" />
 
     </LinearLayout>
 

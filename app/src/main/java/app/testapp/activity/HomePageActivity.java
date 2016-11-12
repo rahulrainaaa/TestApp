@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import app.testapp.R;
 import app.testapp.adapter.ActivityListAdapter;
+import app.testapp.adapter.PickListAdapter;
 
 /**
  * @class HomePageActivity
@@ -23,7 +24,7 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
 
     private TextView txtTargetRate, txtCurrentRate;
     private ListView listView;
-    LinearLayout menuLayout;
+    private LinearLayout menuLayout;
     public ArrayList<String> list;
     private ActivityListAdapter adapter;
 
@@ -53,6 +54,7 @@ public class HomePageActivity extends FragmentActivity implements View.OnClickLi
         switch (view.getId()) {
             case R.id.txt_current_rate:
                 Toast.makeText(this, "Current Rate", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, PickListActivity.class));
                 break;
 
             case R.id.txt_target_rate:
