@@ -19,7 +19,11 @@
             android:name=".activity.HomePageActivity"
             android:label="Activity List" />
         <activity android:name=".activity.SummaryActivity" />
-        <activity android:name=".activity.PickListActivity"></activity>
+        <activity android:name=".activity.PickListActivity" />
+        <activity
+            android:name=".activity.PickListDetailActivity"
+            android:label="@string/title_activity_pick_list_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
