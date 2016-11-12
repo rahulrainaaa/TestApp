@@ -20,10 +20,9 @@
             android:label="Activity List" />
         <activity android:name=".activity.SummaryActivity" />
         <activity android:name=".activity.PickListActivity" />
-        <activity
-            android:name=".activity.PickListDetailActivity"
-            android:label="@string/title_activity_pick_list_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.PickListDetailActivity" />
+        <activity android:name=".activity.LocationActivity" />
+        <activity android:name=".activity.ItemViewActivity"></activity>
     </application>
 
 </manifest>
